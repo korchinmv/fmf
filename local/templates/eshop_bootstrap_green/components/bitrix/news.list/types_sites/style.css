@@ -1,0 +1,14 @@
+div.types-sites-list{position:relative;}
+div.types-sites-item{}
+div.types-sites-text{float:left;width:72%;padding-right:4%;}
+div.types-sites-shema{float:left;width:24%;font-size:114%;line-height:187%;padding-top: 1.3em;font-weight:bold;}
+div.types-sites-shema a,div.types-sites-text a{color:#111820;text-decoration:underline;}
+div.types-sites-shema a:hover,div.types-sites-text a:hover{text-decoration:none;}
+div.types-sites-shema-name{color:#84888c;font-weight:normal;}
+@media(max-width:850px){
+	div.types-sites-item {padding: 0 0 15px;}
+	div.types-sites-text p{font-size:107%;line-height:147%;}
+	div.types-sites-shema{font-size:93%;line-height:169%;}
+	div.types-sites-text,div.types-sites-shema{padding-top:0;width:100%;}
+	div.schemes-name{cursor:pointer;}
+}

@@ -1,0 +1,29 @@
+div.schemes-list{position:relative;}
+div.schemes-item{width:32.5%;float:left;margin-right:1.25%;background:#fff;}
+div.schemes-item.j_one{float:none;margin: 0 auto; }
+.workarea .prices_list div.schemes-item.j_one p {font-size:19px;}
+div.schemes-item:nth-child(3){margin-right:0;}
+div.schemes-name{color:#fff;font-size:120%;line-height:155%;background:#432b7c;padding:3.75% 2%;}
+div.schemes-name>span{display:block;}
+div.schemes-text{position:relative;padding:0 6%;margin:0;color:#111820;line-height: 170%;}
+div.schemes-text ul{font-size:100%;}
+div.title_violet{margin:12% 0 6%;font-size:115%;line-height:1;} 
+.workarea div.schemes-text ul{padding: 0 0 0 15px;list-style-image: url('images/marker_small1.png');}
+.workarea div.schemes-text ul li{padding: 0 0 18px 17px;}
+.schemes-price-table{display:table;width:100%;position:relative;margin:42px 0 0;}
+.schemes-price{background:#f4f5f6;height:112px;color:#84888c;text-align:center;font-size:129%;vertical-align: middle;position: relative;display: table-cell;}
+.schemes-price span{color:#000;font-family: "SFUIDisplay-Heavy","Helvetica Neue", Helvetica, Arial, sans-serif;}
+.schemes-link{padding:13% 6% 2%;font-size:115%;}
+.schemes-link a{text-decoration:underline;color:#432b7c;}
+.schemes-link a:hover{text-decoration:none;}
+@media(max-width:850px){
+	div.schemes-item{width:100%;margin-bottom:8px;}
+	div.schemes-text{height:auto !important;}
+	div.title_violet{margin:5% 0 4%;font-size:94%;line-height:1;} 
+	div.schemes-text ul{font-size:94%;}
+	div.schemes-text{position:relative;padding:0 6%;margin:0;color:#111820;font-size:93%;line-height: 170%;}
+	.workarea div.schemes-text ul li {padding: 0 0 14px 13px;}
+	.schemes-description{padding-top:5%}
+	.schemes-link{font-size:115%;}
+	.schemes-price-table{margin:38px 0 0;}
+}

@@ -1,0 +1,31 @@
+<svg width="747" height="463" viewBox="0 0 747 463" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M141 29C141 22.3726 146.373 17 153 17H538V62H141V29Z" stroke="#47454D" stroke-width="2"/>
+<rect x="234" y="87" width="246" height="26" rx="13" stroke="#47454D" stroke-width="2"/>
+<rect x="161" y="87" width="56" height="26" rx="13" stroke="#47454D" stroke-width="2"/>
+<path d="M252 100H386" stroke="#6657C2" stroke-width="2" stroke-linecap="round"/>
+<rect x="234" y="146" width="207" height="87" rx="3" stroke="#6657C2" stroke-width="2"/>
+<path d="M538 145H493C490.791 145 489 146.791 489 149V230C489 232.209 490.791 234 493 234H619C621.209 234 623 232.209 623 230V166" stroke="#6657C2" stroke-width="2"/>
+<rect x="489" y="246" width="134" height="89" rx="4" stroke="#47454D" stroke-width="2"/>
+<rect x="234" y="247" width="207" height="58" rx="3" stroke="#47454D" stroke-width="2"/>
+<rect x="234" y="319" width="207" height="58" rx="3" stroke="#47454D" stroke-width="2"/>
+<rect x="234" y="391" width="207" height="58" rx="3" stroke="#47454D" stroke-width="2"/>
+<path d="M538 17H153C146.373 17 141 22.3726 141 29V192M675 155V450C675 456.627 669.627 462 663 462H153C146.373 462 141 456.627 141 450V329.115" stroke="#47454D" stroke-width="2"/>
+<rect x="1" y="192" width="208" height="137" rx="3" stroke="#6657C2" stroke-width="2"/>
+<path d="M82 219H189" stroke="#6657C2" stroke-width="2" stroke-linecap="round"/>
+<mask id="path-14-inside-1_1904_4765" fill="white">
+<rect x="16" y="263" width="178" height="51" rx="1"/>
+</mask>
+<rect x="16" y="263" width="178" height="51" rx="1" stroke="#6657C2" stroke-width="4" mask="url(#path-14-inside-1_1904_4765)"/>
+<path d="M82 235L166 235" stroke="#6657C2" stroke-width="2" stroke-linecap="round"/>
+<circle cx="38" cy="227" r="19" stroke="#6657C2" stroke-width="2"/>
+<rect x="538" y="1" width="208" height="154" rx="3" stroke="#6657C2" stroke-width="2"/>
+<path d="M459.909 94C458.938 94 457.989 94.2879 457.182 94.8273C456.374 95.3667 455.745 96.1334 455.374 97.0304C455.002 97.9275 454.905 98.9145 455.094 99.8668C455.284 100.819 455.751 101.694 456.438 102.38C457.124 103.067 457.999 103.534 458.951 103.724C459.904 103.913 460.891 103.816 461.788 103.444C462.685 103.073 463.451 102.444 463.991 101.636C464.53 100.829 464.818 99.88 464.818 98.9091C464.818 97.6071 464.301 96.3585 463.38 95.4379C462.46 94.5173 461.211 94.0001 459.909 94Z" stroke="#6657C2" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M463.572 102.572L467.001 106" stroke="#6657C2" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+<path d="M619 28H731" stroke="#6657C2" stroke-width="2" stroke-linecap="round"/>
+<mask id="path-21-inside-2_1904_4765" fill="white">
+<rect x="553" y="72" width="178" height="68" rx="1"/>
+</mask>
+<rect x="553" y="72" width="178" height="68" rx="1" stroke="#6657C2" stroke-width="4" mask="url(#path-21-inside-2_1904_4765)"/>
+<path d="M619 44L703 44" stroke="#6657C2" stroke-width="2" stroke-linecap="round"/>
+<circle cx="575" cy="36" r="19" stroke="#6657C2" stroke-width="2"/>
+</svg>

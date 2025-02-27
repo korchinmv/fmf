@@ -1,0 +1,104 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<FilesMatch "(rk|redirect).(php)$"> 
+ Order Allow,Deny
+ Deny from all
+ </FilesMatch> 
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+	Options +FollowSymLinks
+	RewriteEngine On
+
+	RewriteCond %{QUERY_STRING} ^\d+\/[^\s\/]+\.htm$
+	RewriteRule ^ - [R=404,L]
+
+	RewriteCond %{HTTP_HOST} ^www
+	RewriteRule ^(.*)$ https://fmf.co.th/$1 [L,R=301]
+
+	Redirect 301 /context/ /ad/
+	Redirect 301 /seo/shop/ /seo/ecommerce/
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+</IfModule>
+
+Redirect 301 /1c-napravlenie/1c-products/ https://fmf.co.th/
+Redirect 301 /1c-napravlenie/1c-services/ https://fmf.co.th/
+Redirect 301 /ad/ https://fmf.co.th/context-ad/
+Redirect 301 /adv/facebook/ https://fmf.co.th/context-ad/
+Redirect 301 /adv/instagram/ https://fmf.co.th/context-ad/
+Redirect 301 /adv/vk/ https://fmf.co.th/context-ad/
+Redirect 301 /clients/ https://fmf.co.th/
+Redirect 301 /conversion/usability/ https://fmf.co.th/
+Redirect 301 /conversion/ https://fmf.co.th/
+Redirect 301 /dev/ https://fmf.co.th/development/
+Redirect 301 /google/context/mobileapps/ https://fmf.co.th/context-ad/
+Redirect 301 /google/context/remarketing/ https://fmf.co.th/context-ad/
+Redirect 301 /google/context/shopping/ https://fmf.co.th/context-ad/
+Redirect 301 /google/context/youtube/ https://fmf.co.th/context-ad/
+Redirect 301 /google/context/ https://fmf.co.th/context-ad/
+Redirect 301 /intranet_system/business_trip_automation/ https://fmf.co.th/development/
+Redirect 301 /intranet_system/vacations_automation/ https://fmf.co.th/development/
+Redirect 301 /intranet_system/ https://fmf.co.th/development/
+Redirect 301 /portfolio/539/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/540/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/541/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/542/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/543/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/544/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/545/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/569/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/570/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/571/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/572/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/573/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/595/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/596/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/636/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/637/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/638/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/680/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/682/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/686/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/687/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/688/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/689/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/690/ https://fmf.co.th/our-work/
+Redirect 301 /portfolio/ https://fmf.co.th/our-work/
+Redirect 301 /rm/serm/ https://fmf.co.th/
+Redirect 301 /seo/analytics/ https://fmf.co.th/seo/
+Redirect 301 /seo/audit/ https://fmf.co.th/seo/
+Redirect 301 /seo/avtosalon/ https://fmf.co.th/seo/
+Redirect 301 /seo/consulting/ https://fmf.co.th/seo/
+Redirect 301 /seo/ecommerce/ https://fmf.co.th/seo/
+Redirect 301 /seo/new_site/ https://fmf.co.th/seo/
+Redirect 301 /seo/portal/ https://fmf.co.th/seo/
+Redirect 301 /seo/position/ https://fmf.co.th/seo/
+Redirect 301 /seo/regions/ https://fmf.co.th/seo/
+Redirect 301 /seo/traffic/ https://fmf.co.th/seo/
+Redirect 301 /seo/treatment/ https://fmf.co.th/seo/

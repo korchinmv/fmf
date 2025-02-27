@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/new01.fmf.ru/webstat"
+AuthUserFile /var/www/fmf-ru/data/etc/14691698.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

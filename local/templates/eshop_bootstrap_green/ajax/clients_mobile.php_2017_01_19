@@ -1,0 +1,77 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php"); ?>
+<?
+$res='';
+$elementCode='';
+CModule::IncludeModule("iblock");
+$res = CIBlockElement::GetList(Array(), array('CODE'=>$_POST['elementCode'], 'ACTIVE'=>'Y'), array(), false, array('ID','IBLOCK_ID'));
+$res1 = CIBlockElement::GetList(Array(), array('CODE'=>$_POST['elementCode'], 'ACTIVE'=>'Y'), false, false, array('ID','IBLOCK_ID'));
+$element = $res1->Fetch();
+
+if($res>0){$elementCode = $_POST['elementCode'];}
+else{$elementCode = 'kia_motors';}
+?>
+<div class="mobile">
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.detail", 
+	"clients", 
+	array(
+		"DISPLAY_DATE" => "N",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"USE_SHARE" => "N",
+		"AJAX_MODE" => "N",
+		"IBLOCK_TYPE" => "content",
+		"IBLOCK_ID" => "10",
+		"ELEMENT_ID" => "",
+		"ELEMENT_CODE" => $elementCode,
+		"CHECK_DATES" => "Y",
+		"FIELD_CODE" => array(
+			0 => "PREVIEW_PICTURE",
+			1 => "",
+		),
+		"PROPERTY_CODE" => array(
+			0 => "KLIENT",
+			1 => "URL",
+			2 => "",
+		),
+		"IBLOCK_URL" => "",
+		"DETAIL_URL" => "",
+		"SET_TITLE" => "N",
+		"SET_CANONICAL_URL" => "N",
+		"SET_BROWSER_TITLE" => "N",
+		"BROWSER_TITLE" => "-",
+		"SET_META_KEYWORDS" => "N",
+		"META_KEYWORDS" => "-",
+		"SET_META_DESCRIPTION" => "N",
+		"META_DESCRIPTION" => "-",
+		"SET_LAST_MODIFIED" => "N",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "N",
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"USE_PERMISSIONS" => "N",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_GROUPS" => "Y",
+		"PAGER_TEMPLATE" => ".default",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"PAGER_TITLE" => "Страница",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"SET_STATUS_404" => "N",
+		"SHOW_404" => "N",
+		"MESSAGE_404" => "",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"AJAX_OPTION_HISTORY" => "N",
+		"COMPONENT_TEMPLATE" => "clients",
+		"AJAX_OPTION_ADDITIONAL" => "undefined"
+	),
+	false
+);?>
+<a class="mobile_back" href="/clients/">Вернуться к списку отзывов</a>
+<br/>
+</div>
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_after.php"); ?>

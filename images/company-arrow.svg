@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" width="27" height="27">
+	<title>Vector 49 (2)</title>
+	<defs>
+		<image  width="26" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaBAMAAABbZFH9AAAAAXNSR0IB2cksfwAAAA9QTFRF////////////////AAAAkcl1BwAAAAV0Uk5Tfz//3wCpmXRlAAAAWklEQVR4nF3KyQ0AIQxD0QyiEJQSqIAD/dc02R3h29M3UdtH3LYeYVt0c4e7Bm/o8BrQ4AlJupAkSBOkqWSpZCnlKeUpFCkUyZXJlclUyVRJhaRCMlWy52z6AWhpPdhcTvoXAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="0"/>
+</svg>

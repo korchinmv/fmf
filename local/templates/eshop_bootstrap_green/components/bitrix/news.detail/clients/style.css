@@ -1,0 +1,22 @@
+.clients-detail{background:#ffffff;box-shadow:0px 0px 40px 2px #b1b1b1;font-size:100%;color:#111820;}
+.clients-detail p{font-size:142.85%;line-height:175%;}
+.clients-detail-header{background:#f4f5f6;padding:50px 85px;}
+.clients-detail-header table{width:100%;border:none;}
+.clients-detail-header img{min-width:153px;}
+.clients-detail-header-text{font-size:16px;padding-left: 32px;line-height:1.5;}
+.clients-detail-header-description{padding-bottom:25px;}
+.clients-detail-content{padding:50px 85px;font-style:italic;}
+.clients-detail-info{float:left;width:580px;max-width:100%;font-size:100%;line-height:228.57%;padding:35px 0;font-style:normal;}
+.clients-detail-info a{color:#111820;border-bottom:1px solid #b4b7b9;}
+.clients-detail-info a:hover{border-bottom:none;}
+a.clients-detail-original{font-style:normal;margin:35px 0;display:block;float:right;font-size:100%;color:#4c328b;text-decoration:none;border:2px solid #4c328b;padding:10px 17px;border-radius:20px;-webkit-border-radius:20px;-moz-border-radius:20px;-khtml-border-radius:20px;}
+a.clients-detail-original:hover{border:2px solid #4c328b;color:#fff;background:#4c328b;}
+@media (max-width:800px) and (min-width:500px){
+	.clients-detail-content{padding:30px 45px;}
+	.clients-detail-header{padding:30px 45px;}
+}
+@media (max-width:500px){
+	.clients-detail-content{padding:20px 25px;}
+	.clients-detail-header{padding:20px 25px;}
+	.clients-detail-header img{min-width:100px;}
+}
